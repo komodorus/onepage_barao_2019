@@ -97,7 +97,7 @@
 							<?php echo $curso->curso_duracao . ' Semestres' . ' | ' . $curso->curso_vagas . ' vagas' ?>
 						</p>
 						<p class="mensalidade text-white font-montserrat letter-spacing-1 text-uppercase text-right">
-							Mensalidades a partir de R$ <?php echo $curso->curso_valor ?>
+							Mensalidades a partir de R$ <?php echo number_format($curso->curso_valor, 2, ',', '.'); ?>
 						</p>
 					</div>
 				</div>

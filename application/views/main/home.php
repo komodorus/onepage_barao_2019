@@ -125,8 +125,7 @@
 					A melhor etapa da sua vida começa aqui
 				</h2>
 				<p class="text-center text-dark-blue font-montserrat">
-					A Barão oferece graduação em todas as áreas do conhecimento. Conta com corpo docente de alto nível e cursos fortes, <b>reconhecidos pelo MEC</b> com <b>conceito 4</b>, inclusive <b>Medicina</b>.
-					<!-- A Barão de Mauá oferece graduação de <b>Nível Superior</b> em diversas áreas, todos com diploma <b>reconhecido pelo MEC</b>. São cursos <b>fortes</b>, a maioria com <b>conceito 4</b>, inclusive <b>Medicina</b>. -->
+					A Barão de Mauá oferece graduação de <b>Nível Superior</b> em diversas áreas, todas com diploma <b>reconhecido pelo MEC</b>. São cursos <b>fortes</b>, a maioria com <b>conceito 4</b>, inclusive <b>Medicina</b>.
 				</p>
 			</div>
 		</div>

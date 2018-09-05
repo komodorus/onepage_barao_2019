@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-md-4 my-4">
                         <div class="text-center">
-                            <a href="#edital" class="h5 mb-3 d-block text-uppercase text-dark-blue font-weight-bold font-montserrat hover-opaque">
+                            <a href="<?php echo base_url('assets/edital_barao_2018.pdf'); ?>" target="_blank" class="h5 mb-3 d-block text-uppercase text-dark-blue font-weight-bold font-montserrat hover-opaque">
                                 Edital <small><i class="fa fa-external-link" aria-hidden="true"></i></small>
                             </a>
                             <p class="text-center text-muted text-uppercase small font-montserrat hover-bold">Confira todas as informações sobre o vestibular Barão 2019.</p>
@@ -56,7 +56,7 @@
                     </div> -->
                     <div class="col-md-4 my-4">
                         <div class="text-center">
-                            <a href="#resultados" class="h5 mb-3 d-block text-uppercase text-dark-blue font-weight-bold font-montserrat hover-opaque">
+                            <a href="#" data-toggle="modal" data-target="#modal_resultados" class="h5 mb-3 d-block text-uppercase text-dark-blue font-weight-bold font-montserrat hover-opaque">
                                 Resultados <small><i class="fa fa-external-link" aria-hidden="true"></i></small>
                             </a>
                             <p class="text-center text-muted text-uppercase small font-montserrat hover-bold">É hora de conferir seu desempenho na prova!</p>
@@ -105,6 +105,44 @@
             </div>
         </section>
     </footer>
+
+    <!-- MODAL RESULTADOS -->
+
+    <div class="modal fade" id="modal_resultados" tabindex="-1" role="dialog" aria-labelledby="modalDocentes" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light-green font-open-sans font-weight-bold text-uppercase" id="exampleModalCenterTitle">Resultados</span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify">,
+                    <ul>
+                        <li>
+                            <b>Medicina: </b> <b>dia 14 de novembro de 2018</b>, a partir <b>das 14 horas</b>, no site da instituição (<a href="http://baraodemaua.br">www.baraodemaua.br</a>).
+                        </li>
+                        <br>
+                        <li>
+                            <b>Demais cursos: </b> <b>dia 30 de outubro de 2018</b>, a partir <b>das 14 horas</b>, no site da instituição (<a href="http://baraodemaua.br">www.baraodemaua.br</a>).
+                        </li>
+                    </ul>
+                    <!-- <p>
+                        O resultado do processo seletivo <b>(EXCETO DO CURSO DE MEDICINA)</b> será publicado no <b>dia 30 de outubro de 2018</b>, a partir <b>das 14 horas</b>, no site da Instituição (<a href="http://baraodemaua.br">www.baraodemaua.br</a>). 
+                    </p>
+                    <hr>
+                    <p>
+                        O resultado do processo seletivo do <b>DO CURSO DE MEDICINA</b> será publicado no <b>dia 14 de novembro de 2018</b>, a partir <b>das 14 horas</b>, no site da instituição (<a href="http://baraodemaua.br">www.baraodemaua.br</a>).
+                    </p> -->
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn text-uppercase text-dark-blue btn-block btn-lg mb-3 font-montserrat font-weight-bold" style="background-color: #00cc99; padding: 13px; font-size: 14px;" data-dismiss="modal">Fechar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

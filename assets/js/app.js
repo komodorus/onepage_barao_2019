@@ -23,8 +23,8 @@ function href(el, href){
 }
 
 $('#ver-e-mail').on('click', function(){
-    changeText(this, 'vestibular@baraodemaua.br');
-    href(this, 'mailto:vestibular@baraodemaua.br&subject=Vestibular%202019');
+    changeText(this, 'callcenter@baraodemaua.br');
+    href(this, 'mailto:callcenter@baraodemaua.br&subject=Vestibular%202019');
 }); 
 
 $('#ver-telefone').on('click', function(){
