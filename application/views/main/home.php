@@ -19,27 +19,15 @@
 			</div>
 			<div class="col-md-4">
 				<div class="bloc-time hours mx-auto" data-init-value="24">
-
+					
 					<div class="figure hours hours-1">
-						<span class="top">2</span>
-						<span class="top-back">
-							<span>2</span>
-						</span>
-						<span class="bottom">2</span>
-						<span class="bottom-back">
-							<span>2</span>
-						</span>
+						<span class="top number_1"><?php echo $dias_ate[0] ?></span>
+						<span class="bottom number_1"><?php echo $dias_ate[0] ?></span>
 					</div>
 
 					<div class="figure hours hours-2">
-						<span class="top">4</span>
-						<span class="top-back">
-							<span>4</span>
-						</span>
-						<span class="bottom">4</span>
-						<span class="bottom-back">
-							<span>4</span>
-						</span>
+						<span class="top number_2"><?php echo $dias_ate[1] ?></span>
+						<span class="bottom number_2"><?php echo $dias_ate[1] ?></span>
 					</div>
 
 				</div>

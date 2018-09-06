@@ -32,7 +32,7 @@
                 <div class="row pt-5 pb-4">	
                     <div class="col-md-4 my-4">
                         <div class="text-center">
-                            <a href="http://baraodemaua.br" target="_blank" class="h5 mb-3 d-block text-uppercase text-dark-blue font-weight-bold font-montserrat hover-opaque">
+                            <a href="http://www.baraodemaua.br/paginas/init/barao-de-maua" target="_blank" class="h5 mb-3 d-block text-uppercase text-dark-blue font-weight-bold font-montserrat hover-opaque">
                                 Sobre a barão <small><i class="fa fa-external-link" aria-hidden="true"></i></small>
                             </a>
                             <p class="text-center text-muted text-uppercase small font-montserrat hover-bold">Conheça mais sobre o centro Universitário e estude em ribeirão preto.</p>
@@ -163,6 +163,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="<?php echo base_url('assets/js/select2.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/js/flipclock.min.js') ?>"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
     <script src="<?php echo base_url('assets/js/app.js') ?>"></script>
   </body>
 </html>

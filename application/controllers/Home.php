@@ -6,41 +6,35 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('curso_model');
-		
+
+		$dias_ate = self::getDaysUntil('27-10-2018'); //retorna um array com o numero de dias;
+
 		$data = [
-			'cursos' => $this->curso_model->get()->result()
+			'cursos' => $this->curso_model->get()->result(),
+			'dias_ate' => $dias_ate
 		];
 
 		$this->load->view('main/includes/header');
-		$this->load->view('main/home', $data, FALSE);
+		$this->load->view('main/home', $data, false);
 		$this->load->view('main/includes/footer');
 	}
-	
-	public function test(){
 
-		$this->load->model('curso_model');
+	public function getDaysUntil($end){
+
+		$dStart = new DateTime('now');
+		$dEnd = new DateTime($end);
+
+		$dDiff = $dStart->diff($dEnd);
+
+		$array = array_map('intval', str_split((int)$dDiff->days + 1));
 		
-		$json = [];
-		
-		$cursos = $this->curso_model->get()->result();
-		
-		foreach ($cursos as $curso) {
-			array_push($json, [
-				'curso' => $curso->curso_nome . ' | ' . $curso->curso_periodo,
-				'codigo' => $curso->curso_id,
-				'vagas' => $curso->curso_vagas
-			]);
+		if(!isset($array[1])){
+			array_unshift($array, 0);
 		}
 
-		// header('Content-disposition: attachment; filename=file.json');
-		// header('Content-type: application/json');
-		
-		echo "<pre>";
-		print_r (json_encode($json, JSON_UNESCAPED_UNICODE));
-		echo "</pre>";
-		
+		return $array;
 
+	} 
 
-	}
 
 }

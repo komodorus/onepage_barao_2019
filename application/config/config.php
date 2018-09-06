@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://192.168.0.112/onepage_barao_2019/';
+$config['base_url'] = 'https://vestibular.baraodemaua.br/';
 
 /*
 |--------------------------------------------------------------------------

@@ -427,6 +427,6 @@
 	</div>
 </div>
 
-<form action="http://vestibular.baraodemaua.teste/cadastro.php" method="post" class="d-none hidden_form">
+<form action="<?php echo base_url('cadastro.php') ?>" method="post" class="d-none hidden_form">
 	<input type="text" name="curso" value="<?php echo $curso->curso_erp ?>">
 </form>
