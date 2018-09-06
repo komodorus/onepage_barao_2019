@@ -1,8 +1,6 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-
-
 class Sync extends CI_Controller {
 
     private $tables = [
@@ -44,8 +42,10 @@ class Sync extends CI_Controller {
         // }
 
         // $this->db->query('SET FOREIGN_KEY_CHECKS = 1;');
-            
-        self::updateNomesValores($data);
+        
+        // self::updateDiferenciais($data);
+
+        // self::updateNomesValores($data);
         // self::updateCursos($dataParsed);
         // self::updateAvaliacao(json_decode(file_get_contents(base_url('avaliacao.json'))));
         // self::updateIcons();
@@ -62,6 +62,18 @@ class Sync extends CI_Controller {
         // }
         
         
+    }
+
+    private function updateDiferenciais($data){
+        foreach ($data as $curso) {
+            $this->db->where('curso_id', $curso->codigoCurso)->update(
+                $this->tables['cursos']['name'],
+                [
+                    'curso_diferencial' => $curso->diferencial
+                ]
+            );
+            
+        }
     }
 
     private function updateNomesValores($cursos){
@@ -112,7 +124,7 @@ class Sync extends CI_Controller {
             }
             
 
-            // self::updateDiferencial($curso->curso_id, get_detalhes($curso->curso_detalhes));
+            self::updateDiferencial($curso->curso_id, get_detalhes($curso->curso_detalhes));
 
         }
 

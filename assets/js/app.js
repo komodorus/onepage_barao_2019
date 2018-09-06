@@ -14,6 +14,11 @@ $(document).ready(function() {
 
 });
 
+$('.btn_curso_post').on('click', function(e){
+    e.preventDefault();
+    $('.hidden_form').submit();
+});
+
 function changeText(el, text){
     return $(el).html(text);
 }

@@ -22,6 +22,7 @@ class Curso extends CI_Controller {
 
         $data['diferenciais'] = array_filter(preg_split("/\\r\\n|\\r|\\n|;/", $data['curso']->curso_diferencial));
         
+        
         $data['detalhes'] = $this->diferencial_model->get($cursoId)->result();
         $data['docentes'] = $this->docente_model->get($cursoId)->result();
 

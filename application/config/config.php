@@ -35,7 +35,7 @@ $config['base_url'] = 'http://192.168.0.112/onepage_barao_2019/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
